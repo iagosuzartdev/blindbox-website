@@ -34,7 +34,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-white text-white hover:bg-white/10 transition-colors"
+              className="border-2 text-brand-lightblue border-white text-white hover:bg-white/10 transition-colors"
             >
               Nossos Serviços
             </Button>
