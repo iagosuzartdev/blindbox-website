@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section 
       id="inicio"
-      className="relative pt-28 pb-20 md:pt-36 md:pb-32 bg-gradient-to-r from-brand-blue to-brand-lightblue overflow-hidden"
+      className="relative pt-32 pb-48 md:pt-40 md:pb-64 bg-gradient-to-r from-brand-blue to-brand-lightblue overflow-hidden"
     >
       {/* SVG Overlay */}
       <div className="absolute right-0 bottom-0 w-full h-full overflow-hidden opacity-5">
@@ -25,10 +25,17 @@ const Hero = () => {
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Especialistas em Conserto de Portas de Vidro</h1>
           <p className="text-lg md:text-xl mb-8 opacity-90">Atendimento rápido, técnico especializado e garantia de serviço.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-brand-blue hover:bg-gray-100 transition-colors">
+            <Button 
+              size="lg" 
+              className="bg-brand-lightblue text-white hover:bg-brand-blue transition-colors shadow-lg border-2 border-white/20"
+            >
               Solicitar Orçamento
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-brand-blue transition-colors">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-white text-white hover:bg-white/10 transition-colors"
+            >
               Nossos Serviços
             </Button>
           </div>
