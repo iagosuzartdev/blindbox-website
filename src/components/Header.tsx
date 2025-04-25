@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMenuOpen(false); // Fecha o menu no mobile
+    setIsMenuOpen(false);
   };
 
   return (
@@ -56,40 +56,43 @@ const Header = () => {
           className="md:hidden text-brand-blue p-2 transition-all"
           aria-label="Menu"
           initial={{ rotate: 0 }}
-          animate={{ rotate: isMenuOpen ? 45 : 0 }} // A animação agora acontece quando isMenuOpen muda
+          animate={{ rotate: isMenuOpen ? 45 : 0 }}
           transition={{ duration: 0.3 }}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </motion.button>
       </div>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <motion.div
-          className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -50 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="container py-4 flex flex-col space-y-4">
-            <button onClick={() => scrollToSection('inicio')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Início</button>
-            <button onClick={() => scrollToSection('servicos')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Serviços</button>
-            <button onClick={() => scrollToSection('sobre')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Sobre</button>
-            <button onClick={() => scrollToSection('depoimentos')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Depoimentos</button>
-            <button onClick={() => scrollToSection('contato')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Contato</button>
-            <Button
-              className="btn-primary flex items-center justify-center gap-2 w-full"
-              onClick={() => {
-                window.open('https://wa.me/5571999129050', '_blank');
-              }}
-            >
-              <Phone size={18} />
-              Fale Conosco
-            </Button>
-          </div>
-        </motion.div>
-      )}
+      {/* Mobile Menu com animação de entrada e saída */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            key="mobile-menu"
+            className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="container py-4 flex flex-col space-y-4">
+              <button onClick={() => scrollToSection('inicio')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Início</button>
+              <button onClick={() => scrollToSection('servicos')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Serviços</button>
+              <button onClick={() => scrollToSection('sobre')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Sobre</button>
+              <button onClick={() => scrollToSection('depoimentos')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Depoimentos</button>
+              <button onClick={() => scrollToSection('contato')} className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2">Contato</button>
+              <Button
+                className="btn-primary flex items-center justify-center gap-2 w-full"
+                onClick={() => {
+                  window.open('https://wa.me/5571999129050', '_blank');
+                }}
+              >
+                <Phone size={18} />
+                Fale Conosco
+              </Button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
