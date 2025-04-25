@@ -1,5 +1,5 @@
+
 import React from 'react';
-import './WhatsAppButton.css'; // Importar o arquivo CSS
 
 const WhatsAppButton = () => {
   return (
@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
       href="https://wa.me/5571999129050" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="whatsapp-fixed animate-wave"  // Adicionando a animação "wave"
+      className="whatsapp-fixed"
       aria-label="Contato via WhatsApp"
     >
       <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
