@@ -51,13 +51,15 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <motion.button 
           onClick={toggleMenu} 
           className="md:hidden text-brand-blue p-2 transition-all"
           aria-label="Menu"
+          animate={{ rotate: isMenuOpen ? 45 : 0 }} // Adiciona rotação do menu para "X"
+          transition={{ duration: 0.3 }}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        </motion.button>
       </div>
 
       {/* Mobile Menu */}
