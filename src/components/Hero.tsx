@@ -35,7 +35,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 bg-white/80 text-brand-lightblue border-white hover: text-white bg-white/10 transition-colors"
+              className="border-2 bg-brand-lightblue text-brand-lightblue border-white hover: text-white bg-white/10 transition-colors"
               onClick={() => {
                 const servicos = document.getElementById('servicos');
                 if (servicos) {
@@ -51,19 +51,19 @@ const Hero = () => {
 
       {/* Wave divider */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1440 320"
-    className="w-full h-[80px] block"
-    preserveAspectRatio="none"
-  >
-    <path
-      fill="#ffffff"
-      fillOpacity="1"
-      d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L0,320Z"
-    />
-  </svg>
-</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            className="w-full h-[80px] block"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#ffffff"
+              fillOpacity="1"
+              d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L0,320Z"
+            />
+          </svg>
+        </div>
     </section>
   );
 };

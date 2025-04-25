@@ -65,7 +65,7 @@ const Header = () => {
             <Button className="btn-primary flex items-center justify-center gap-2 w-full"
             onClick={() => {
               window.open(
-                'https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento.',
+                'https://wa.me/5571999129050?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento.',
                 '_blank'
               );
             }}>
