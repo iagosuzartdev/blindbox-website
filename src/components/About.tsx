@@ -1,25 +1,52 @@
 
-import React, { useEffect, useState } from 'react'; 
+import React, { useEffect, useRef, useState } from 'react'; 
 import { Check } from 'lucide-react';
 
 const About = () => {
   const [count, setCount] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
+  const counterRef = useRef(null); // Referência para o bloco do contador
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasStarted) {
+          setHasStarted(true); // Marca que já começou para não repetir
+        }
+      },
+      {
+        threshold: 0.6, // Quando 60% do elemento estiver visível
+      }
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => {
+      if (counterRef.current) {
+        observer.unobserve(counterRef.current);
+      }
+    };
+  }, [hasStarted]);
 
   useEffect(() => {
+    if (!hasStarted) return;
+
     const target = 3000;
     let currentCount = 0;
 
     const interval = setInterval(() => {
-      currentCount += Math.ceil(target / 100); // Acelera a contagem, pode ajustar para mais ou menos rápido
+      currentCount += Math.ceil(target / 100);
       if (currentCount >= target) {
         currentCount = target;
-        clearInterval(interval); // Para a contagem quando atingir 3000
+        clearInterval(interval);
       }
       setCount(currentCount);
-    }, 30); // Intervalo de tempo entre cada atualização (menor = mais rápido)
+    }, 30);
 
-    return () => clearInterval(interval); // Limpa o intervalo quando o componente for desmontado
-  }, []);
+    return () => clearInterval(interval);
+  }, [hasStarted]);
 
   return (
     <section id="sobre" className="section bg-brand-gray">
@@ -82,9 +109,12 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              
-              <div className="absolute -bottom-6 -right-6 bg-white p-5 rounded-lg shadow-lg max-w-xs">
-                <div className="font-bold text-brand-blue text-lg mb-1">+ de{count}</div>
+              {/* Contador com ref */}
+
+              <div 
+              ref={counterRef}
+              className="absolute -bottom-6 -right-6 bg-white p-5 rounded-lg shadow-lg max-w-xs">
+                <div className="font-bold text-brand-blue text-lg mb-1">+ de {count}</div>
                 <div className="text-gray-600 text-sm">Clientes satisfeitos nos últimos anos</div>
               </div>
             </div>

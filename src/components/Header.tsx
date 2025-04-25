@@ -31,7 +31,13 @@ const Header = () => {
 
         {/* Contact Button - Desktop */}
         <div className="hidden md:flex items-center">
-          <Button className="btn-primary flex items-center gap-2">
+          <Button className="btn-primary flex items-center gap-2"
+          onClick={() => {
+            window.open(
+              'https://wa.me/5571999129050?text=Olá!',
+              '_blank'
+            );
+          }}>
             <Phone size={18} />
             Fale Conosco
           </Button>
@@ -56,7 +62,13 @@ const Header = () => {
             <a href="#sobre" className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2" onClick={toggleMenu}>Sobre</a>
             <a href="#depoimentos" className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2" onClick={toggleMenu}>Depoimentos</a>
             <a href="#contato" className="text-brand-blue hover:text-brand-lightblue font-medium transition-colors p-2" onClick={toggleMenu}>Contato</a>
-            <Button className="btn-primary flex items-center justify-center gap-2 w-full">
+            <Button className="btn-primary flex items-center justify-center gap-2 w-full"
+            onClick={() => {
+              window.open(
+                'https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento.',
+                '_blank'
+              );
+            }}>
               <Phone size={18} />
               Fale Conosco
             </Button>
