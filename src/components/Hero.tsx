@@ -28,14 +28,14 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-brand-lightblue text-white hover:bg-brand-blue transition-colors shadow-lg border-2 border-white/20"
-              onClick={() => window.open('https://wa.me/5571999129050', '_blank')}
+              onClick={() => window.open('https://wa.me/5571999129050?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento.', '_blank')}
             >
               Solicitar Orçamento
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 bg-brand-lightblue text-brand-lightblue border-white hover: text-white bg-white/10 transition-colors"
+              className="border-2 bg-brand-lightblue text-brand-lightblue border-white hover:text-white bg-white/10 transition-colors"
               onClick={() => {
                 const servicos = document.getElementById('servicos');
                 if (servicos) {
