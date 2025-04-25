@@ -22,12 +22,13 @@ const Hero = () => {
 
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center text-white">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">Especialistas em Conserto de Portas de Vidro</h1>
-          <p className="text-lg md:text-xl mb-8 opacity-90">Atendimento rápido, técnico especializado e garantia de serviço.</p>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">Especialistas em Conserto de Portas de Vidro Temperado</h1>
+          <p className="text-lg md:text-xl mb-8 opacity-90">Atendimento rápido, peças originais e técnicos experientes. Soluções práticas e eficazes para residências e empresas.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               className="bg-brand-lightblue text-white hover:bg-brand-blue transition-colors shadow-lg border-2 border-white/20"
+              onClick={() => window.open('https://wa.me/5571999129050', '_blank')}
             >
               Solicitar Orçamento
             </Button>
@@ -35,8 +36,14 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="border-2 bg-white/80 text-brand-lightblue border-white hover: text-white bg-white/10 transition-colors"
+              onClick={() => {
+                const servicos = document.getElementById('servicos');
+                if (servicos) {
+                  servicos.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
-              Nossos Serviços
+              Ver Serviços
             </Button>
           </div>
         </div>

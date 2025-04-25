@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Column 1 - About */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">VidroFoco</h3>
+            <h3 className="text-xl font-semibold mb-4">BlindBox</h3>
             <p className="text-gray-300 mb-4">
               Especialistas em manutenção e conserto de portas de vidro temperado, 
               oferecendo soluções rápidas e eficientes para residências e empresas.
@@ -70,7 +70,7 @@ const Footer = () => {
                   <Phone className="h-5 w-5 text-gray-300" />
                 </div>
                 <div>
-                  <p className="text-gray-300">(11) 99999-9999</p>
+                  <p className="text-gray-300">(71) 99912-9050</p>
                 </div>
               </li>
               <li className="flex items-start">
@@ -78,7 +78,7 @@ const Footer = () => {
                   <Mail className="h-5 w-5 text-gray-300" />
                 </div>
                 <div>
-                  <p className="text-gray-300">contato@vidrofoco.com.br</p>
+                  <p className="text-gray-300">contato@blindbox.com.br</p>
                 </div>
               </li>
               <li className="flex items-start">
@@ -87,8 +87,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-gray-300">
-                    Av. Exemplo, 1000 - Bairro
-                    <br />São Paulo - SP, 00000-000
+                    Av. Exemplo, 1080 - Bairro
+                    <br />Salvador - BA, 00000-000
                   </p>
                 </div>
               </li>
@@ -99,7 +99,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 mt-8 border-t border-gray-700">
           <p className="text-center text-gray-400 text-sm">
-            © {new Date().getFullYear()} VidroFoco - Especialistas em Portas de Vidro. Todos os direitos reservados.
+            © {new Date().getFullYear()} BlindBox - Especialistas em Vidros Temperados. Todos os direitos reservados.
           </p>
         </div>
       </div>

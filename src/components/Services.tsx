@@ -5,33 +5,33 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const serviceItems = [
   {
-    title: "Manutenção de Blindex",
-    description: "Recuperamos e ajustamos portas de vidro temperado com problemas de funcionamento.",
+    title: "Manutenção de Portas de Vidro (Blindex)",
+    description: "Diagnóstico completo e conserto de portas com problemas de funcionamento, travamento ou ruído.",
     icon: <Wrench className="h-10 w-10 text-brand-blue" />,
   },
   {
     title: "Troca de Roldanas",
-    description: "Substituímos roldanas desgastadas que prejudicam o deslizamento das portas de correr.",
+    description: "Substituímos roldanas desgastadas que dificultam a abertura e o fechamento das portas de correr.",
     icon: <Settings className="h-10 w-10 text-brand-blue" />,
   },
   {
-    title: "Ajuste de Portas",
-    description: "Corrigimos desalinhamentos em portas de vidro que estão arrastando ou com dificuldade para abrir.",
+    title: "Ajuste de Portas Desalinhadas",
+    description: "Corrigimos portas que arrastam, não fecham corretamente ou estão desalinhadas.",
     icon: <Wrench className="h-10 w-10 text-brand-blue" />,
   },
   {
-    title: "Instalação de Fechaduras",
-    description: "Instalamos ou substituímos fechaduras e puxadores em portas de vidro temperado.",
+    title: "Instalação e Troca de Fechaduras",
+    description: "Instalamos e substituímos fechaduras, trincos e puxadores de forma segura e precisa.",
     icon: <Settings className="h-10 w-10 text-brand-blue" />,
   },
   {
-    title: "Troca de Molas",
-    description: "Substituímos molas de piso desgastadas que impedem o fechamento automático das portas.",
+    title: "Substituição de Molas de Piso",
+    description: "Troca de molas danificadas ou desgastadas que afetam o fechamento automático das portas.",
     icon: <Wrench className="h-10 w-10 text-brand-blue" />,
   },
   {
-    title: "Vedação e Borrachas",
-    description: "Instalamos ou substituímos borrachas de vedação para evitar entrada de água e poeira.",
+    title: "Instalação de Borrachas de Vedação",
+    description: "Aplicação de vedação para evitar entrada de água, vento ou poeira.",
     icon: <Settings className="h-10 w-10 text-brand-blue" />,
   },
 ];
@@ -41,9 +41,9 @@ const Services = () => {
     <section id="servicos" className="section bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-brand-blue">Nossos Serviços</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-brand-blue">Soluções completas para portas de vidro temperado</h2>
           <p className="text-gray-600">
-            Oferecemos soluções completas para todos os problemas com portas de vidro temperado, com atendimento rápido e profissionais experientes.
+          Oferecemos manutenção, ajustes e substituição de peças com agilidade e segurança. Confira nossos principais serviços:
           </p>
         </div>
 

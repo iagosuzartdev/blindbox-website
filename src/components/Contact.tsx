@@ -40,10 +40,9 @@ const Contact = () => {
     <section id="contato" className="section bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-brand-blue">Entre em Contato</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-brand-blue">Fale Conosco!</h2>
           <p className="text-gray-600">
-            Estamos prontos para atender sua necessidade. Preencha o formulário ou 
-            entre em contato por um dos nossos canais de comunicação.
+             Estamos prontos para te atender com rapidez e eficiência. Entre em contato por WhatsApp, telefone ou formulário.
           </p>
         </div>
 
@@ -128,7 +127,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-700">Telefone</h4>
-                  <p className="text-brand-blue font-medium">(11) 99999-9999</p>
+                  <p className="text-brand-blue font-medium">(11) 99912-9050</p>
                 </div>
               </div>
               
@@ -138,7 +137,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-700">Email</h4>
-                  <p className="text-brand-blue font-medium">contato@vidrofoco.com.br</p>
+                  <p className="text-brand-blue font-medium">contato@blindbox.com.br</p>
                 </div>
               </div>
               
@@ -149,8 +148,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-gray-700">Endereço</h4>
                   <p className="text-gray-600">
-                    Av. Exemplo, 1000 - Bairro
-                    <br />São Paulo - SP, 00000-000
+                    Av. Exemplo, 1080 - Bairro
+                    <br />Salvador - BA, 00000-000
                   </p>
                 </div>
               </div>
@@ -163,7 +162,7 @@ const Contact = () => {
                   <h4 className="font-medium text-gray-700">Horário de Atendimento</h4>
                   <p className="text-gray-600">
                     Segunda a Sexta: 8h às 18h
-                    <br />Sábado: 8h às 12h
+                    <br />Sábado: 8h às 13h
                   </p>
                 </div>
               </div>

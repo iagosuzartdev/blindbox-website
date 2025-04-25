@@ -4,21 +4,21 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Carlos Silva",
-    position: "Proprietário de Consultório",
-    text: "Serviço excelente! A porta da entrada do meu consultório estava completamente desalinhada e eles consertaram no mesmo dia. Ótimo atendimento e profissionalismo.",
+    name: "Fernanda Oliveira",
+    position: "Lojista",
+    text: "Atendimento ágil e trabalho impecável. Resolveram o problema da porta da minha loja no mesmo dia. Super indico!",
     rating: 5,
   },
   {
-    name: "Maria Oliveira",
-    position: "Loja de Roupas",
-    text: "A manutenção foi rápida e eficiente. Os técnicos são muito educados e deixaram tudo limpo após o serviço. Recomendo fortemente.",
-    rating: 5,
-  },
-  {
-    name: "Roberto Santos",
+    name: "Marcos Ribeiro",
     position: "Síndico",
-    text: "Contratamos para fazer a manutenção de todas as portas de vidro do condomínio. O serviço foi impecável e com um preço justo. Já é nosso fornecedor fixo.",
+    text: "Serviço de primeira! Equipe educada, rápida e muito caprichosa. Recomendo sem pensar duas vezes.",
+    rating: 5,
+  },
+  {
+    name: "Juliana Lima",
+    position: "Arquiteta",
+    text: "Já utilizei o serviço da BlindBox duas vezes e em ambas fui muito bem atendido. Profissionais de confiança.",
     rating: 5,
   }
 ];
@@ -39,8 +39,7 @@ const Testimonials = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-2xl md:text-4xl font-bold mb-4 text-brand-blue">O Que Nossos Clientes Dizem</h2>
           <p className="text-gray-600">
-            A satisfação de nossos clientes é nossa maior recompensa. 
-            Confira o que eles têm a dizer sobre nossos serviços.
+          A satisfação dos nossos clientes é nosso maior reconhecimento. Veja o que dizem sobre nossos serviços:
           </p>
         </div>
         

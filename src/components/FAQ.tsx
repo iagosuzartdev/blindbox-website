@@ -4,23 +4,23 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqItems = [
   {
-    question: "Quanto tempo leva para realizar o conserto de uma porta de vidro?",
-    answer: "O tempo de conserto varia conforme o problema. Manutenções simples como troca de roldanas ou ajustes geralmente são feitas em 1 a 2 horas. Casos mais complexos podem levar mais tempo, mas buscamos sempre resolver no mesmo dia."
+    question: "Quanto tempo leva para realizar um conserto?",
+    answer: "Geralmente resolvemos no mesmo dia, dependendo do tipo de reparo e disponibilidade da peça."
   },
   {
-    question: "Vocês trabalham com todos os tipos de porta de vidro temperado?",
-    answer: "Sim, atendemos todos os modelos: portas de correr, pivotantes, de abrir, box de banheiro, entre outros. Nossa equipe é especializada em todos os sistemas de portas de vidro temperado disponíveis no mercado."
+    question: "Vocês atendem em fins de semana?",
+    answer: "Sim! Fazemos atendimentos sob agendamento em horários estendidos, inclusive aos sábados."
+  },
+  {
+    question: "Vocês trabalham com qualquer tipo de porta de vidro?",
+    answer: "Sim, somos especializados em portas de vidro temperado de correr, pivotantes e automáticas. Nossa equipe é especializada em todos os sistemas de portas de vidro temperado disponíveis no mercado."
   },
   {
     question: "Oferecem garantia para os serviços realizados?",
-    answer: "Sim, todos os nossos serviços possuem garantia. As peças substituídas têm garantia de fábrica e o serviço de instalação tem nossa garantia própria. O período exato varia conforme o tipo de serviço realizado."
+    answer: "Sim, todos os nosso sserviços possuem garantia. As peças substitídas têm garantia de fábrica e o serviço de instalação tem nossa garantia própria. O período exato varia conforme o tipo de serviço realizado."
   },
   {
-    question: "Vocês atendem em fins de semana ou horários noturnos?",
-    answer: "Sim, para emergências, oferecemos atendimento em horários estendidos e fins de semana. Entre em contato para verificar a disponibilidade e possíveis valores adicionais para estes horários."
-  },
-  {
-    question: "Como faço para solicitar um orçamento?",
+    question: "Como solicitar um orçamento?",
     answer: "Você pode solicitar um orçamento pelo WhatsApp, telefone ou preenchendo o formulário de contato em nosso site. Um de nossos técnicos entrará em contato para agendar uma visita técnica ou, em casos simples, fornecer uma estimativa por telefone."
   }
 ];
@@ -36,10 +36,10 @@ const FAQ = () => {
     <section id="faq" className="section bg-brand-gray">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-brand-blue">Perguntas Frequentes</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-brand-blue">Dúvidas Frequentes</h2>
           <p className="text-gray-600">
             Encontre respostas para as dúvidas mais comuns sobre nossos serviços.
-            Se não encontrar sua resposta aqui, entre em contato conosco.
+            Se não encontrar sua resposta aqui, entre em contato conosco via Whatsapp!
           </p>
         </div>
 
