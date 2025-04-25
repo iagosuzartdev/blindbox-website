@@ -55,7 +55,8 @@ const Header = () => {
           onClick={toggleMenu} 
           className="md:hidden text-brand-blue p-2 transition-all"
           aria-label="Menu"
-          animate={{ rotate: isMenuOpen ? 45 : 0 }} // Adiciona rotação do menu para "X"
+          initial={{ rotate: 0 }}
+          animate={{ rotate: isMenuOpen ? 45 : 0 }} // A animação agora acontece quando isMenuOpen muda
           transition={{ duration: 0.3 }}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
