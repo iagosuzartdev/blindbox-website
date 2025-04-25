@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
 
@@ -51,37 +51,15 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <motion.button 
           onClick={toggleMenu} 
           className="md:hidden text-brand-blue p-2 transition-all"
           aria-label="Menu"
+          animate={{ rotate: isMenuOpen ? 45 : 0 }} // Adiciona rotação do menu para "X"
+          transition={{ duration: 0.3 }}
         >
-          <motion.div
-            className="flex flex-col justify-between items-center"
-            initial={{ opacity: 1 }}
-            animate={isMenuOpen ? { rotate: 45, y: 5, scaleX: 1.5 } : { rotate: 0, y: 0, scaleX: 1 }}
-            transition={{ duration: 0.3 }}
-          >
-            {/* Barra 1 */}
-            <motion.div
-              className="h-1 w-6 bg-brand-blue"
-              animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            />
-            {/* Barra 2 */}
-            <motion.div
-              className="h-1 w-6 bg-brand-blue"
-              animate={isMenuOpen ? { opacity: 0, rotate: 90 } : { opacity: 1, rotate: 0 }}
-              transition={{ duration: 0.3 }}
-            />
-            {/* Barra 3 */}
-            <motion.div
-              className="h-1 w-6 bg-brand-blue"
-              animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            />
-          </motion.div>
-        </button>
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </motion.button>
       </div>
 
       {/* Mobile Menu */}

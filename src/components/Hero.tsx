@@ -35,7 +35,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 bg-brand-lightblue text-white border-white hover:text-brand-lightblue bg-white/10 transition-colors"
+              className="border-2 bg-brand-blue text-white border-white hover:text-brand-lightblue bg-white/10 transition-colors"
               onClick={() => {
                 const servicos = document.getElementById('servicos');
                 if (servicos) {
